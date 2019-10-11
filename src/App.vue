@@ -14,8 +14,6 @@
 import {eventBus} from './main.js'
 
 import FilmForm from './components/FilmForm.vue'
-import FilmsList from './components/FilmsList.vue';
-import ListComponent from './components/ListComponent.vue';
 import FilmDetail from './components/FilmDetail.vue';
 import FavouriteFilms from './components/FavouriteFilms.vue';
 
@@ -33,7 +31,7 @@ export default {
     .then(res => res.json())
     .then(films => this.films = films)
 
-    eventBus.$on('selectedFilm', (film) => {
+    eventBus.$on('film-selected', (film) => {
       this.selectedFilm = film;
     })
 
@@ -42,8 +40,6 @@ export default {
     })
   },
   components: {
-    'films-list': FilmsList,
-    'list-component': ListComponent,
     'film-detail': FilmDetail,
     'favourite-films': FavouriteFilms,
     'film-form': FilmForm
