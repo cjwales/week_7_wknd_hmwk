@@ -35,7 +35,7 @@ export default {
       this.selectedFilm = film;
     })
 
-    eventBus.$on('selectedFavourite', (favouriteFilm) => {
+    eventBus.$on('selectedFavourite', (favouritefilm) => {
       this.favourites.push(favouritefilm)
     })
   },
