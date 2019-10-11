@@ -20,7 +20,7 @@ export default {
   props: ['films'],
   methods: {
     handleSelect() {
-      eventBus.$emit('film-selected', this.selectedFilm)
+      eventBus.$emit('filmSelected', this.selectedFilm)
     }
   }
 }

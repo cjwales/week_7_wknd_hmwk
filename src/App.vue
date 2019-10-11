@@ -30,7 +30,7 @@ export default {
     .then(res => res.json())
     .then(films => this.films = films)
 
-    eventBus.$on('film-selected', (film) => {
+    eventBus.$on('filmSelected', (film) => {
       this.selectedFilm = film;
     })
 
