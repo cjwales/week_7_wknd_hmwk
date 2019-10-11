@@ -47,12 +47,9 @@ export default {
 </script>
 
 <style lang="css" scoped>
-.body {
-  background-image: url("../public/background.jpg");
-}
 .main-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 h1 {

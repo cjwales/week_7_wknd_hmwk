@@ -31,6 +31,7 @@ export default {
 <style lang="css" scoped>
 .film-detail {
   max-width: 300px;
+  background-color: white;
 }
 
 .title {
