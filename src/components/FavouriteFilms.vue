@@ -1,5 +1,6 @@
 <template lang="html">
   <div>
+    <h4>Favourite Films</h4>
     <ul>
       <li v-for="favourite in favourites">{{favourite.title}}</li>
     </ul>
