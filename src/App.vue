@@ -2,7 +2,8 @@
   <div>
     <h1>Studio Ghibli Films</h1>
     <div class="main-container">
-      <films-list :films="films"></films-list>
+      <film-form :films="films"></film-form>
+      <!-- <films-list :films="films"></films-list> -->
       <film-detail :film="selectedFilm"></film-detail>
       <favourite-films :favourites="favourites"></favourite-films>
     </div>
@@ -12,6 +13,7 @@
 <script>
 import {eventBus} from './main.js'
 
+import FilmForm from './components/FilmForm.vue'
 import FilmsList from './components/FilmsList.vue';
 import ListComponent from './components/ListComponent.vue';
 import FilmDetail from './components/FilmDetail.vue';
@@ -43,7 +45,8 @@ export default {
     'films-list': FilmsList,
     'list-component': ListComponent,
     'film-detail': FilmDetail,
-    'favourite-films': FavouriteFilms
+    'favourite-films': FavouriteFilms,
+    'film-form': FilmForm
   }
 }
 </script>
