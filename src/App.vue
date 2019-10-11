@@ -1,6 +1,6 @@
 <template lang="html">
   <div>
-    <h1>Studio Ghibli Films</h1>
+    <h1>Studio Ghibli</h1>
     <div class="main-container">
       <films-list :films="films"></films-list>
       <film-detail :film="selectedFilm"></film-detail>
