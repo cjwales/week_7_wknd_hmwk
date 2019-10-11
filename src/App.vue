@@ -3,7 +3,6 @@
     <h1>Studio Ghibli Films</h1>
     <div class="main-container">
       <film-form :films="films"></film-form>
-      <!-- <films-list :films="films"></films-list> -->
       <film-detail :film="selectedFilm"></film-detail>
       <favourite-films :favourites="favourites"></favourite-films>
     </div>
