@@ -1,8 +1,8 @@
 <template lang="html">
-  <div>
+  <div class="master">
     <h1>Studio Ghibli Films</h1>
+    <film-form :films="films"></film-form>
     <div class="main-container">
-      <film-form :films="films"></film-form>
       <film-detail :film="selectedFilm"></film-detail>
       <favourite-films :favourites="favourites"></favourite-films>
     </div>
@@ -47,7 +47,16 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.body {
+  background-image: url("../public/background.jpg");
+}
 .main-container {
   display: flex;
+  justify-content: space-evenly;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'PT Serif', serif;
 }
 </style>

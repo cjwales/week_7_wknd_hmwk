@@ -1,6 +1,6 @@
 <template lang="html">
   <div v-if="film" class="film-detail">
-    <h3>{{film.title}}</h3>
+    <h3 class="title">{{film.title}}</h3>
     <h4>{{film.release_date}}</h4>
     <h4>Directed by: {{film.director}}</h4>
     <h4>Produced by: {{film.producer}}</h4>
@@ -31,5 +31,22 @@ export default {
 <style lang="css" scoped>
 .film-detail {
   max-width: 300px;
+}
+
+.title {
+  font-family: 'PT Serif', serif;
+}
+
+button {
+  background-color: #1ecbe1;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 </style>

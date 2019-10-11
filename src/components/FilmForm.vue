@@ -27,4 +27,13 @@ export default {
 </script>
 
 <style lang="css" scoped>
+form{
+  text-align: center;
+  margin: 40px 0;
+}
+
+select {
+  font-size: 18px;
+  margin-left: 20px;
+}
 </style>
