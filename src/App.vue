@@ -1,5 +1,8 @@
 <template lang="html">
-  <h1>Studio Ghibli Films</h1>
+  <div class="main-container">
+    <h1>Studio Ghibli Films</h1>
+
+  </div>
 </template>
 
 <script>
@@ -9,7 +12,8 @@ export default {
   name: 'app',
   data(){
     return {
-      films: []
+      films: [],
+      selectedFilm: null
     }
   },
   mounted() {
@@ -24,4 +28,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
+.main-container {
+  display: flex;
+}
 </style>

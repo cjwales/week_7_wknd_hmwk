@@ -1,14 +1,17 @@
 <template lang="html">
-  <div>
-    <ul>
+  <ul>
 
-    </ul>
-  </div>
+  </ul>
 </template>
 
 <script>
 export default {
-  name: "film-list",
+  name: "films-list",
+  data(){
+    return {
+      "selectedFilm": []
+    }
+  },
   props: ['films']
 }
 </script>
