@@ -1,18 +1,20 @@
 <template lang="html">
-  <ul>
-
-  </ul>
+  <div>
+    <ul>
+      <list-component v-for="film in films" :film="film"></list-component>
+    </ul>
+  </div>
 </template>
 
 <script>
+import ListComponent from './ListComponent.vue'
+
 export default {
   name: "films-list",
-  data(){
-    return {
-      "selectedFilm": []
-    }
-  },
-  props: ['films']
+  props: ['films'],
+  components: {
+    'list-component': ListComponent
+  }
 }
 </script>
 
