@@ -4,7 +4,7 @@
     <h4>{{film.release_date}}</h4>
     <h4>Directed by: {{film.director}}</h4>
     <h4>Produced by: {{film.producer}}</h4>
-    <p>Rotten Tomatoes Score: {{film.rt_score}}</p>
+    <h5>Rotten Tomatoes Score: {{film.rt_score}}</h5>
     <p>Description: {{film.description}}</p>
     <button v-on:click="handleClick" type="button" name="add-favourite">Add to Favourites</button>
   </div>
@@ -31,11 +31,16 @@ export default {
 <style lang="css" scoped>
 .film-detail {
   max-width: 300px;
-  background-color: white;
+  background-color: lightblue;
 }
 
 .title {
   font-family: 'PT Serif', serif;
+}
+
+p {
+  text-align: left;
+  margin: 10px;
 }
 
 button {
@@ -47,7 +52,7 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 10px;
   cursor: pointer;
 }
 </style>
