@@ -15,7 +15,15 @@ export default {
 </script>
 
 <style lang="css" scoped>
+h4 {
+  font-family: 'PT Serif', serif;
+}
+
 ul {
   list-style: none;
+}
+
+li {
+  font-family: 'PT Serif', serif;
 }
 </style>
