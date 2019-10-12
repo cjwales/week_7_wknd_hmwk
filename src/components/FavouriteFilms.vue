@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="favourite-box">
+  <div v-if="this.favourites.length >= 1" class="favourite-box">
     <h4>My Favourites</h4>
     <ul>
       <li v-for="favourite in favourites">{{favourite.title}}</li>
