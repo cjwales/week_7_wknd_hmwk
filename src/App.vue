@@ -37,6 +37,11 @@ export default {
     eventBus.$on('selectedFavourite', (favouritefilm) => {
       this.favourites.push(favouritefilm)
     })
+
+    eventBus.$on('favourite-deleted', (film) => {
+      let favIndex = this.favourites.indexOf(film)
+      this.favourites.splice(favIndex, 1)
+    })
   },
   components: {
     'film-detail': FilmDetail,
